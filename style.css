@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.header .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.header .nav-bar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .nav-bar a:hover {
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.text-content {
+    max-width: 500px;
+    margin: 5%;
+}
+
+.text-content .h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.text-content p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: rgba(211, 233, 122, 1);
+    color:#000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.linkedin img {
+    
+    width: 50px;
+    height: 50px;         
+    border-radius: 50%;  
+    background-color: #fff;
+}
+
+.icon.github {
+    width: 50px;
+    height: 50px;         
+    border-radius: 50%;  
+    background-color: #fff;
+    
+}
+
+.icon.medium img{
+    width: 50px;
+    height: 50px;         
+    border-radius: 50%;
+    background-color: #111;
+}
+
+
+
+.image-content {
+    background-color: #000000;
+    
+    
+}
+
+.image-content img {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    border-radius: 15px;
+    margin: 15%;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.about-section .about {
+    max-width: 500px;
+    margin: 5%;
+}
+
+.about-section .about .h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.about-section .about p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
