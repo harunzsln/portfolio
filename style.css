@@ -163,3 +163,65 @@ header {
     color: #aaa;
     margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.article-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.article-section .article {
+    max-width: 500px;
+    margin: 5%;
+}
+
+.article-section .article .h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.article-section .article p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+
+.card-container {
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 20px; /* Kartlar arasında boşluk bırakır */
+    justify-content: space-between;
+}
+
+.card {
+    width:fit-content; /* 3 kart yan yana */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(165, 94, 242, 0.864);
+}
+
+
+
