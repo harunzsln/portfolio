@@ -15,6 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    border-bottom: 1px solid #333;
 }
 
 .logo {
@@ -27,12 +28,14 @@ header {
     list-style: none;
     display: flex;
     gap: 40px;
+    
 }
 
 .header .nav-bar ul li a {
     color: #ccc;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .header .nav-bar a:hover {
@@ -177,11 +180,6 @@ header {
     .card {
         width: 100%;
         justify-content: space-between;
-    }
-
-    .contact-me {
-        width: 50%;
-        justify-content:center;
     }
 
 }
