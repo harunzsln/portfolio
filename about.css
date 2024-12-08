@@ -1,0 +1,12 @@
+.about-more {
+    max-width: 500px;
+    margin: 5%;
+    color: #dedede;
+    font-size: 1.1rem;
+}
+
+.about-more p {
+    font-size: 1.1rem;
+    color: #dedede;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,25 @@
+.contact-me {
+    color: #dedede;
+    font-size: 1.1rem;
+    margin: 250;
+
+}
+
+.contact-me p {
+    font-size: 1.1rem;
+    color: #dedede;
+    margin-bottom: 30px;
+}
+.contact-me a {
+    font-size: 1.1rem;
+    color: #dedede;
+    margin-bottom: 30px;
+}
+
+.svg{
+    height: 40;
+    width:40;
+    color: #dedede;
+    
+}
+
