@@ -1,61 +1,98 @@
-.articles {
-    font-size: 1.1rem;
-    color: #dedede;
-    margin-bottom: 30px;
+
+
+ 
+.container {
+  display: flex;
+  height: calc(100vh - 50px); 
 }
 
-.sidebar-aside {
-    width: 25%;
-    height: 100%;
-    background-color: #1e1e1e;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
-    border-right: 1px solid #333; 
+
+.sidebar {
+  width: 20%;
+  background-color: #222;
+  padding: 10px;
+  overflow-y: auto;
 }
 
-.search-bar {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #f5f5f5;
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.article-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.sidebar-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.article-item {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #2a2a2a;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s;
+/* Sidebar Butonları */
+.sidebar-item button {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  
+  font-size: 14px;
+  
 }
 
-.article-item:hover {
-    background-color: #007bff;
-    color: #fff;
+
+
+
+
+
+.sidebar-item:hover {
+  background-color: #444;
 }
 
-/* Content Area */
+
+.content {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Scrollbar genel stili */
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar genişliği */
+}
+
+/* Scrollbar arka planı */
+::-webkit-scrollbar-track {
+  background: #39373782; 
+}
+
+/* Scrollbar tutamağı */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px; /* Yuvarlak köşeler */
+}
+
+/* Scrollbar tutamağı hover durumu */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+article {
+  display: none;
+}
+
+article:first-child {
+  display: block; 
+}
+
+article h1 {
+  margin-top: 0;
+}
+
 .article-content {
-    flex:auto;
-    padding: 50px;
-    overflow-y: auto;
-    color: #dedede;
+  margin-top: 20px;
+  color: #dedede;
 }
-
-.article-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #dedede;
-}
-
