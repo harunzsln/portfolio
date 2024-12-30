@@ -19,3 +19,9 @@ function toggleArticle(articleId) {
   });
 
   */
+
+  document.getElementById('card1').addEventListener('click', function() {
+    window.location.href = 'https://medium.com/@harunzsln0/git-ve-github-ile-sürüm-kontrolüne-giriş-85c3c4090eff';
+  });
+
+ 

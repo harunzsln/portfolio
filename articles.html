@@ -6,7 +6,7 @@
   <title>Articles</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="articles.css" />
-  <script src="article.js"></script>
+  <script src="script.js"></script>
   
 </head>
 
@@ -24,136 +24,41 @@
     </nav>
   </header>
 
-
-  <div class="container">
-  <!-- Sidebar -->
-   
-  <aside class="sidebar">
-    <!--<input type="text" class="search-bar" placeholder="Search articles..." />-->
-    <ul class="sidebar-list">
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-1')>Git ve GitHub ile Sürüm Kontrolüne Giriş</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-2')>PostgreSQL ile Veritabanı Yönetimi: Komutlar -1</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-3')>PostgreSQL ile Veritabanı Yönetimi: Komutlar -2</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-4')>PostgreSQL ile Veritabanı Yönetimi: Metinsel Fonksiyonlar</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-5')>PostgreSQL ile Veritabanı Yönetimi: Aritmetik Fonksiyonlar</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-6')>PostgreSQL ile Veritabanı Yönetimi: VIEW Oluşturma, ALTER VIEW ve Değişken Atama</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-7')>PostgreSQL ile Veritabanı Yönetimi: Karar Yapıları</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-8')>PostgreSQL ile Veritabanı Yönetimi: WHILE ve Loop Yapısı</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-9')>PostgreSQL ile Veritabanı Yönetimi: PROCEDURE kullanımı</button></li>
-      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-10')>JavaScript Selectors ile DOM Manipülasyonu</button></li>
-    </ul>
-  </aside>
-
-  <section class="article-content">
-    <article><h1>Welcome to my articles</h1>
-      <p>Click on the headers to read the articles
-        <br>
-        <br>
-        if you want to read the articles on medium, you can click <a href="https://medium.com/@harunzsln0">here</a>
-      </p></article>
-    <article id="article-1">
-      <h1>Git ve GitHub ile Sürüm Kontrolüne Giriş</h1>
-      <p>First Content</p>
-    </article>
-    <article id="article-2">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-3">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-4">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-5">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-6">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-7">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-8">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-9">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-    <article id="article-10">
-      <h1>Second Article</h1>
-      <p>Second Content</p>
-    </article>
-  </section>
-
-
-
-  <!-- Article Content 
-  <section class="article-content">
-    
-  </section>-->
-</div>
-
-
-  </div>
-  </div>
-  <!--
-    <section id="article" class="article-section">
-      
-        <div class="article">
-        <h2>My Articles</h2>
-        <br />
-
-        <p>
-          Here is my medium articles you can read here and on medium to click
-          <a href="https://medium.com/@harunzsln0">here</a>
+  <div class="articles-section">
+    <h1>My Articles</h1>
+    <div class="card-container">
+      <div class="card" id="card1">
+        <h3 class="card-title">Git ve GitHub ile Sürüm Kontrolüne Giriş</h3>
+        <p><i>
+          Merhaba arkadaşlar bu yazımda sizlere kısaca Git ve GitHub nedir ve temel kullanımı nasıldır bunlardan bahsedeceğim. İyi okumalar dilerim!
+        </i>
         </p>
-        <div class="card-container">
-          <div id="article_1" class="card">
-            <h3>PostgreSQL ile Veritabani Yonetimi - 1</h3>
-            
-            <p>
-              <i
-                >Buradan postgresql ile veritabanı yönetimi komutlarini
-                anlattigim medium yazima ulasabilirsiniz</i
-              >
-            </p>
-            <a
-              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-komutlar-1-de3b8daada8c"
-              target="_blank"
-              >oku abi oku</a
-            >
-          </div>
-          <div id="article_2" class="card">
-            <h3>medium yazisi</h3>
-            <p>bu yazida bunu anlattim.</p>
-            <a
-              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-karar-yapıları-70bb61c1c42c"
-              target="_blank"
-              >oku abi oku</a
-            >
-          </div>
-
-          <div id="article_3" class="card">
-            <h3>medium yazisi</h3>
-            <p>bu yazida bunu anlattim.</p>
-            <a
-              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-karar-yapıları-70bb61c1c42c"
-              target="_blank"
-              >oku abi oku</a
-            >
-          </div>
-        </div>
+        <a href="https://medium.com/@harunzsln0/git-ve-github-ile-sürüm-kontrolüne-giriş-85c3c4090eff" class="read-more" target="_blank">Read More</a>
       </div>
-    </section>
--->
+      <div class="card" id="card2">
+        <h3 class="card-title">PostgreSQL ile Veritabanı Yönetimi: Komutlar -1</h3>
+        <p><i>
+          Bu yazıda sizlere PostgreSQL’in ne olduğunu ve temel komutlarını anlatacağım. Tabloların nasıl oluşturulacağını, veritabanı yönetimi için gerekli komutları ve SQL sorgularını ele alacağız. İyi okumalar!
+        </i></p>
+        <a href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-komutlar-1-de3b8daada8c" class="read-more" target="_blank">Read More</a>
+      </div>
+      <div class="card" id="card3">
+        <h3 class="card-title" >PostgreSQL ile Veritabanı Yönetimi: Komutlar -2</h3>
+        <p><i>
+          Merhaba, bir önceki yazımızda PostgreSQL kullanarak kütüphane veritabanı için gerekli tabloları oluşturmuş ve veriler eklemiştik. Bu yazımızda, daha gelişmiş sorgular ve veri yönetimi tekniklerine odaklanacağız.
+        </i></p>
+        <a href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-komutlar-2-cd335b450e6e" class="read-more" target="_blank">Read More</a>
+      </div>
+      <div class="card" id="card4">
+        <h3 class="card-title">DOM Manipulation with JavaScript Selectors</h3>
+        <p><i>
+          Hello friends, in this article we will talk about what the DOM is and how we can manipulate it.
+        </i></p>
+        <a href="https://medium.com/@harunzsln0/dom-manipulation-with-javascript-selectors-bf1a4431ff1c" class="read-more" target="_blank">Read More</a>
+      </div>
+    </div>
+  </div>
+ 
 </body>
 
 </html>

@@ -1,0 +1,282 @@
+<!--
+  <div class="container">
+  
+   
+  <aside class="sidebar">
+   
+    <ul class="sidebar-list">
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-1')>Git ve GitHub ile Sürüm Kontrolüne Giriş</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-2')>PostgreSQL ile Veritabanı Yönetimi: Komutlar -1</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-3')>PostgreSQL ile Veritabanı Yönetimi: Komutlar -2</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-4')>PostgreSQL ile Veritabanı Yönetimi: Metinsel Fonksiyonlar</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-5')>PostgreSQL ile Veritabanı Yönetimi: Aritmetik Fonksiyonlar</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-6')>PostgreSQL ile Veritabanı Yönetimi: VIEW Oluşturma, ALTER VIEW ve Değişken Atama</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-7')>PostgreSQL ile Veritabanı Yönetimi: Karar Yapıları</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-8')>PostgreSQL ile Veritabanı Yönetimi: WHILE ve Loop Yapısı</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-9')>PostgreSQL ile Veritabanı Yönetimi: PROCEDURE kullanımı</button></li>
+      <li class="sidebar-item"><button type="button" onClick=toggleArticle('article-10')>JavaScript Selectors ile DOM Manipülasyonu</button></li>
+    </ul>
+  </aside>
+
+  <section class="article-content">
+    <article><h1>Welcome to my articles</h1>
+      <p>Click on the headers to read the articles
+        <br>
+        <br>
+        if you want to read the articles on medium, you can click <a href="https://medium.com/@harunzsln0">here</a>
+      </p></article>
+    <article id="article-1">
+      <div class="article-class">
+      <h2>Git ve GitHub ile Sürüm Kontrolüne Giriş</h2>
+      <p><i>Merhaba arkadaşlar bu yazımda sizlere kısaca Git ve GitHub nedir ve temel kullanımı nasıldır bunlardan bahsedeceğim. 
+      <br>İyi okumalar dilerim!</i></p>
+      <br>
+      <br>
+      <p>
+        Bir yazılım geliştiricisi olarak projelerimizi düzenli, takip edilebilir ve güvenli hale getirmek istiyorsak Git ve Github kullanımını iyice öğrenmemiz gerekiyor.En başlarda bunu öğrenirken biraz karıştırabiliyoruz ama zamanla hepimiz bunlara alışacağız bu yüzden ben de bu yazıyı hem sizlere hem de bana yardımcı olması için hazırladım. Hadi başlayalım!
+
+      </p>
+
+      <h1 class="custom-title">Git Nedir?</h1>
+      <p>
+        GitHub, Git ile oluşturduğunuz yerel depolarınızı internet üzerinde barındırmanıza olanak tanır. Ayrıca, iş birliği yapmayı kolaylaştıran özellikleriyle ekip projelerinde vazgeçilmez bir araçtır.
+        <br>
+        Örneğin GitHub üzerinden bir takım üyesi, sizinle eş zamanlı olarak projedeki başka bir dosya üzerinde çalışabilir. Herkesin katkısı ayrı dallarda tutulur ve birleştirilir.
+        <br>
+        Tanımlarımızdan bahsettiğimize göre şimdi örneklerimize geçebiliriz.
+      </p>
+      <br>
+      <h3>1 - Git komutları:</h3>
+      <br>
+      <p>
+        Buradaki komutlarımızı projemizin klasoründe açtığımız git bash ya da command prompt üzerinden gerçekleştirebiliriz.
+      </p>
+      <br>
+      <h4>1.1 Yeni Bir Git Deposu Oluşturma:</h4>
+      <p>
+        <code>git init</code> komutu ile projemizin klasöründe git deposu oluşturabiliriz.
+      </p>
+      <br>
+      <img src="images/articles-img/gitinit.png.png" alt="git init" width="500" height="50">
+      <br>
+      <br>
+      <h4>1.2 Uzaktan Depo Bağlama:</h4>
+      <pre>
+        <code>git remote add origin [SSH/HTTPS URL]</code>
+      </pre>
+      <p>
+        Yerel depomuzu GitHub’daki bir depoya bağlar. Bağlamak istediğimiz deponun ssh anahtarını ya da URL adresini kullanarak burada birleştiririz.
+      </p>
+      <br>
+      <br>
+      <h3>2. Dosya Yönetimi ve Takibi:</h3>
+      <br>
+      <h4>2.1 Dosya Ekleme:</h4>
+      <br>
+      <p>
+        <code>git add </code> komutunu kullanarak hangi dosyayı yükleyeceğimizi belirtebiliriz
+      </p>
+      <br>
+      <pre>
+        <code>git add .  
+          //bu komutumuz klasörümüzdeki tüm dosyaları yüklememize hazır hale getirir.
+          <br>
+          git add [klasor_adı]
+          //bu komut</code> 
+      </pre>
+      <br>
+      <h4>2.2 Değişiklikleri Commit Etme:</h4>
+      <br>
+      <p>
+        <code>git commit -m "commit mesajı"</code> komutu ile yaptığımız değişiklikleri kaydedebiliriz.
+      </p>
+      <br>
+    <img src="images/articles-img/gitcommit.png" alt="git commit" width="500" height="100">
+    <br>
+    <br>
+    <h3>3. Var Olan Bir Depoya Dosya Ekleme:</h3>
+    <br>
+    <p>
+      Yerelde var olan bir depoya dosya eklemek içinse aşağıdaki kodları sırasıyla yazıp çalıştırabiliriz.
+    </p>
+    <br>
+    <pre>
+      <code>
+        git remote add origin [SSH/HTTPS URL]
+        git remote add origin https://github.com/harunzsln/blablaa.git
+        // remote already exist ciktisini alirsak sadece 
+        git add .
+        //ya da git add [klasor ismi] komutlarini kullanabiliriz.
+        git branch -M main
+        git push -u origin main</code>
+    </pre>
+    <br>
+    <p>
+      Eğer dosya eklemek istediğimiz depomuz bilgisayarımız localinde değilse öncesinde bu depoyu klonlamamız gerekir onu da git clone komutu ile gerçekleştirebiliriz.
+    </p>
+    <br>
+    <pre>
+      <code>git clone https://github.com/kullaniciadi/projeadi.git</code>
+    </pre>
+    <br>
+    <p>
+      Bu komutu çalıştırıp klonlama işlemini gerçekleştirdikten sonra diğer işlemlere devam edebiliriz.
+    </p>
+    <br>
+    <h3>4. Branch (Dal) Yönetimi:</h3>
+    <br>
+    <p>
+      Branching (dal oluşturma), bir sürüm kontrol sistemi olan Git’te, ana kod tabanından bağımsız olarak değişiklikler yapabilmenizi sağlayan bir yöntemdir. Bu, özellikle bir projede yeni özellikler geliştirme, hata düzeltme veya deneysel değişiklikler yaparken, ana kodun bozulmasını engellemek için kullanılır.
+      <br>
+      Bir branch (dal), bir Git deposundaki bağımsız bir çalışma alanıdır. Ana kod tabanından (genelde main ya da master dalı) ayrılır ve bu ayrılan dalda yapılan değişiklikler ana dala etkide bulunmaz. Değişiklikler tamamlandığında, dallar tekrar birleştirilebilir.
+    </p>
+    <br>
+    <h4>4.1 Branch Oluşturma:</h4>
+    <br>
+    <p>
+      <code>git branch -M main</code> komutunu kullanarak main branch yani ana dalımızı oluştururuz.
+    </p>
+    <br>
+    <h4>4.2 Yeni Branch Oluşturma:</h4>
+    <br>
+    <pre>
+      <code>git checkout -b [branch_adı]</code>
+    </pre>
+    <br>
+    <p>
+      Bu komut ile yeni bir branch oluşturur ve o branch’e geçiş yapabiliriz. Eğer birden fazla branch üstünde çalışıyorsak <code> git checkout [branh_adı]</code>komutunu kullanarak branch yani dallar arasında geçiş yapabiliriz. Ve bunları yaptıktan sonra son işlemimize geçebiliriz.
+    </p>
+    <br>
+    <h3>5. Değişiklikleri GitHub’a Gönderme:</h3>
+    <br>
+    <p>
+      <code>git push</code> komutu yaptığımız tüm değişikliklerimizi uzak depoya göndermemizi sağlar.
+    </p>
+    <br>
+    <pre>
+      <code>git push -u origin main</code>
+    </pre>
+    <br>
+    <p>
+      Son olarak bu komutumuzu da çalıştırınca yaptığımız tüm değişiklikleri Gıthub’a aktarmış olacağız.
+    </p>
+    <br>
+    <br>
+    <p><i></i>
+      Arkadaşlar bu yazımda sizlere elimden geldiğince Git ve GitHub kullanımını anlatmaya çalıştım artık projelerinizi daha etkili bir şekilde yönetebilir ve değişikliklerinizi güvenle takip edebilirsiniz.Bu bilgileri kullanarak pratik yapmayı unutmayın! Hatasız kodlamalar dilerim!
+    </i>
+    </p>
+    </div>
+    </article>
+    <article id="article-2">
+      <h2>PostgreSQL ile Veritabanı Yönetimi: Komutlar -1</h2>
+      <br>
+      <p><i>
+        Bu yazıda sizlere PostgreSQL’in ne olduğunu ve temel komutlarını anlatacağım. Tabloların nasıl oluşturulacağını, veritabanı yönetimi için gerekli komutları ve SQL sorgularını ele alacağız. İyi okumalar!
+      </i></p>
+      <br>
+      <h1 class="custom-title">PostgreSQL nedir?</h1>
+      <br>
+      <p>
+        PostgreSQL, gelişmiş bir açık kaynaklı nesne-ilişkisel veritabanı yönetim sistemidir. 1986 yılında University of California, Berkeley’de başlatılan POSTGRES projesinin devamı olarak geliştirilmiştir. SQL standartlarına uyumlu olmasının yanı sıra, zengin veri türleri ve genişletilebilirlik gibi özellikleri ile tanınır. PostgreSQL, yüksek performans, güvenilirlik ve genişletilebilirlik sunarak büyük ölçekli uygulamalardan küçük projelere kadar geniş bir yelpazede kullanılabilir.
+      </p>
+      <br>
+      <h3 class="custom-title">PostgreSQL ile Tablo Oluşturma</h3>
+      <br>
+      <p>
+        Tablo oluşturmak için <code>create table</code> komutu kullanılır ve bu komutla beraber tablomuzda bulunacak sütunların isimlerini ve hangi veri tipinde olacağını belirtmemiz gerekir. Şimdi bir kütüphane örneği ile başlayacağız bunun için authors(yazarlar), books(kitaplar), members(üyeler) ve loans(ödünç alma) tablolarını oluşturacağız ve bu tabloların birbirleri ile ilişkili olmalarını sağlayacağız.
+      </p>
+      <br>
+
+    </article>
+    <article id="article-3">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-4">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-5">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-6">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-7">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-8">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-9">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+    <article id="article-10">
+      <h1>Second Article</h1>
+      <p>Second Content</p>
+    </article>
+
+  </section>
+
+</div>
+
+
+  </div>
+  </div>
+-->
+  <!--
+    <section id="article" class="article-section">
+      
+        <div class="article">
+        <h2>My Articles</h2>
+        <br />
+
+        <p>
+          Here is my medium articles you can read here and on medium to click
+          <a href="https://medium.com/@harunzsln0">here</a>
+        </p>
+        <div class="card-container">
+          <div id="article_1" class="card">
+            <h3>PostgreSQL ile Veritabani Yonetimi - 1</h3>
+            
+            <p>
+              <i
+                >Buradan postgresql ile veritabanı yönetimi komutlarini
+                anlattigim medium yazima ulasabilirsiniz</i
+              >
+            </p>
+            <a
+              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-komutlar-1-de3b8daada8c"
+              target="_blank"
+              >oku abi oku</a
+            >
+          </div>
+          <div id="article_2" class="card">
+            <h3>medium yazisi</h3>
+            <p>bu yazida bunu anlattim.</p>
+            <a
+              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-karar-yapıları-70bb61c1c42c"
+              target="_blank"
+              >oku abi oku</a
+            >
+          </div>
+
+          <div id="article_3" class="card">
+            <h3>medium yazisi</h3>
+            <p>bu yazida bunu anlattim.</p>
+            <a
+              href="https://medium.com/@harunzsln0/postgresql-ile-veritabanı-yönetimi-karar-yapıları-70bb61c1c42c"
+              target="_blank"
+              >oku abi oku</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+-->
